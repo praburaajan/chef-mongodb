@@ -49,7 +49,7 @@ default[:mongodb][:sysconfig_file_template] = 'mongodb.sysconfig.erb'
 default[:mongodb][:dbconfig_file_template] = 'mongodb.conf.erb'
 default[:mongodb][:dbconfig_file] = '/etc/mongodb.conf'
 
-default[:mongodb][:package_name] = 'mongodb'
+default[:mongodb][:package_name] = 'tokumx'
 default[:mongodb][:package_version] = nil
 
 default[:mongodb][:default_init_name] = 'mongodb'
@@ -74,7 +74,7 @@ when 'rhel', 'fedora'
   # determine the package name
   # from http://rpm.pbone.net/index.php3?stat=3&limit=1&srodzaj=3&dl=40&search=mongodb
   # verified for RHEL5,6 Fedora 18,19
-  default[:mongodb][:package_name] = 'mongodb-server'
+  default[:mongodb][:package_name] = 'tokumx'
   default[:mongodb][:sysconfig_file] = '/etc/sysconfig/mongodb'
   default[:mongodb][:user] = 'mongod'
   default[:mongodb][:group] = 'mongod'
